@@ -677,6 +677,72 @@ footer {
   font-size: 0.9rem;
 }
 
+/* Mobile Quick Navigation Bar (Desktop: Hidden) */
+.mobile-quick-nav {
+  display: none;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 10px 4px 4px;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.mobile-quick-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.mnav-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-glass);
+  color: var(--text-muted);
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.mnav-pill:active, .mnav-pill:hover {
+  background: rgba(0, 242, 254, 0.15);
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+/* Mobile Table Swipe Hint (Desktop: Hidden) */
+.mobile-swipe-hint {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: rgba(0, 242, 254, 0.08);
+  border: 1px solid rgba(0, 242, 254, 0.25);
+  padding: 8px 16px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 16px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-main);
+  text-align: center;
+}
+
+/* Custom Sleek Mobile Table Scrollbar */
+.table-wrapper::-webkit-scrollbar {
+  height: 6px;
+}
+.table-wrapper::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.6);
+  border-radius: 4px;
+}
+.table-wrapper::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #00f2fe, #00ff87);
+  border-radius: 4px;
+}
+
 /* Responsive Media Queries - Optimized for Mobile Smartphones */
 @media (max-width: 1024px) {
   .hero-title { font-size: 3rem; }
@@ -699,8 +765,16 @@ footer {
     display: none; 
   }
 
+  .mobile-quick-nav {
+    display: flex;
+  }
+
+  .mobile-swipe-hint {
+    display: flex;
+  }
+
   .hero {
-    padding: 30px 0 50px;
+    padding: 24px 0 44px;
   }
 
   .hero-pill {
@@ -714,9 +788,9 @@ footer {
   }
 
   .hero-subtitle {
-    font-size: 1rem;
+    font-size: 0.98rem;
     padding: 0 4px;
-    margin-bottom: 28px;
+    margin-bottom: 24px;
   }
 
   .hero-actions {
@@ -728,13 +802,13 @@ footer {
   .hero-actions .btn {
     width: 100%;
     padding: 14px;
-    font-size: 1rem;
+    font-size: 0.98rem;
   }
 
   .hero-dashboard { 
     grid-template-columns: 1fr 1fr;
     gap: 12px;
-    margin-top: 28px;
+    margin-top: 24px;
   }
 
   .metric-card {
@@ -750,15 +824,15 @@ footer {
   }
 
   .section-header {
-    margin-bottom: 32px;
+    margin-bottom: 24px;
   }
 
   .section-title {
-    font-size: 1.8rem;
+    font-size: 1.75rem;
   }
 
   .section-desc {
-    font-size: 0.95rem;
+    font-size: 0.92rem;
   }
 
   .sim-controls, .sim-display {
@@ -769,15 +843,26 @@ footer {
     grid-template-columns: 1fr; 
   }
 
+  /* Horizontal Scrollable Tabs for Mobile */
   .pitch-tabs { 
-    flex-wrap: wrap; 
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    justify-content: flex-start;
     gap: 8px;
+    padding-bottom: 8px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .pitch-tabs::-webkit-scrollbar {
+    display: none;
   }
 
   .pitch-tab {
-    padding: 8px 14px;
+    padding: 10px 16px;
     font-size: 0.85rem;
-    flex: 1 1 calc(50% - 8px);
+    flex: 0 0 auto;
     text-align: center;
   }
 
@@ -789,25 +874,27 @@ footer {
 
   .copy-btn {
     position: static;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     width: 100%;
     order: -1;
   }
 
   .pitch-content {
-    font-size: 1rem;
-    line-height: 1.7;
+    font-size: 0.98rem;
+    line-height: 1.75;
   }
 
   .pillar-card, .math-card {
-    padding: 24px 16px;
+    padding: 22px 16px;
   }
 
   .toast {
-    left: 20px;
-    right: 20px;
-    bottom: 20px;
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
     text-align: center;
+    font-size: 0.88rem;
+    padding: 12px 18px;
   }
 }
 
@@ -818,10 +905,6 @@ footer {
 
   .hero-title {
     font-size: 1.85rem;
-  }
-
-  .pitch-tab {
-    flex: 1 1 100%;
   }
 
   .comparison-table th, .comparison-table td {
