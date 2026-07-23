@@ -677,7 +677,7 @@ footer {
   font-size: 0.9rem;
 }
 
-/* Responsive Media Queries - Optimized for Mobile Smartphones */
+/* Responsive Media Queries */
 @media (max-width: 1024px) {
   .hero-title { font-size: 3rem; }
   .hero-dashboard { grid-template-columns: 1fr 1fr; }
@@ -687,150 +687,9 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .container {
-    padding: 0 16px;
-  }
-
-  .nav-container {
-    padding: 10px 16px;
-  }
-
-  .nav-links { 
-    display: none; 
-  }
-
-  .hero {
-    padding: 30px 0 50px;
-  }
-
-  .hero-pill {
-    font-size: 0.78rem;
-    padding: 5px 12px;
-  }
-
-  .hero-title { 
-    font-size: 2.1rem; 
-    line-height: 1.25;
-  }
-
-  .hero-subtitle {
-    font-size: 1rem;
-    padding: 0 4px;
-    margin-bottom: 28px;
-  }
-
-  .hero-actions {
-    flex-direction: column;
-    gap: 12px;
-    padding: 0 12px;
-  }
-
-  .hero-actions .btn {
-    width: 100%;
-    padding: 14px;
-    font-size: 1rem;
-  }
-
-  .hero-dashboard { 
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-    margin-top: 28px;
-  }
-
-  .metric-card {
-    padding: 16px 12px;
-  }
-
-  .metric-val {
-    font-size: 2.1rem;
-  }
-
-  .metric-lbl {
-    font-size: 0.78rem;
-  }
-
-  .section-header {
-    margin-bottom: 32px;
-  }
-
-  .section-title {
-    font-size: 1.8rem;
-  }
-
-  .section-desc {
-    font-size: 0.95rem;
-  }
-
-  .sim-controls, .sim-display {
-    padding: 20px 16px;
-  }
-
-  .file-preset-grid { 
-    grid-template-columns: 1fr; 
-  }
-
-  .pitch-tabs { 
-    flex-wrap: wrap; 
-    gap: 8px;
-  }
-
-  .pitch-tab {
-    padding: 8px 14px;
-    font-size: 0.85rem;
-    flex: 1 1 calc(50% - 8px);
-    text-align: center;
-  }
-
-  .pitch-box {
-    padding: 24px 16px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .copy-btn {
-    position: static;
-    margin-bottom: 20px;
-    width: 100%;
-    order: -1;
-  }
-
-  .pitch-content {
-    font-size: 1rem;
-    line-height: 1.7;
-  }
-
-  .pillar-card, .math-card {
-    padding: 24px 16px;
-  }
-
-  .toast {
-    left: 20px;
-    right: 20px;
-    bottom: 20px;
-    text-align: center;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-dashboard { 
-    grid-template-columns: 1fr; 
-  }
-
-  .hero-title {
-    font-size: 1.85rem;
-  }
-
-  .pitch-tab {
-    flex: 1 1 100%;
-  }
-
-  .comparison-table th, .comparison-table td {
-    padding: 14px 12px;
-    font-size: 0.82rem;
-  }
-
-  .badge-winner, .badge-loser, .badge-neutral {
-    font-size: 0.78rem;
-    padding: 6px 10px;
-  }
+  .nav-links { display: none; }
+  .hero-title { font-size: 2.2rem; }
+  .hero-dashboard { grid-template-columns: 1fr; }
+  .file-preset-grid { grid-template-columns: 1fr; }
+  .pitch-tabs { flex-wrap: wrap; }
 }
