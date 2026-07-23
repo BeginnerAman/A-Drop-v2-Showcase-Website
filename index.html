@@ -38,19 +38,10 @@
           <li><a href="#pitch">Product Overview</a></li>
           <li><a href="#telemetry">Engine Metrics</a></li>
         </ul>
-        <a href="#simulator" class="btn btn-primary nav-cta">
+        <a href="#simulator" class="btn btn-primary">
           <i class="fa-solid fa-play"></i> Test Engine
         </a>
       </nav>
-
-      <!-- Mobile Quick Scroll Pills (Visible on Mobile) -->
-      <div class="mobile-quick-nav">
-        <a href="#simulator" class="mnav-pill"><i class="fa-solid fa-gauge-high"></i> Simulator</a>
-        <a href="#benchmark" class="mnav-pill"><i class="fa-solid fa-chart-simple"></i> Benchmarks</a>
-        <a href="#architecture" class="mnav-pill"><i class="fa-solid fa-microchip"></i> Pillars</a>
-        <a href="#pitch" class="mnav-pill"><i class="fa-solid fa-file-lines"></i> Pitch</a>
-        <a href="#telemetry" class="mnav-pill"><i class="fa-solid fa-square-poll-vertical"></i> Metrics</a>
-      </div>
     </div>
   </header>
 
@@ -225,175 +216,72 @@
     </div>
   </section>
 
-  <!-- Trillion-Dollar Tech Giants Benchmark Comparison Cards -->
+  <!-- Trillion-Dollar Tech Giants Benchmark Table -->
   <section id="benchmark" class="matrix-section">
     <div class="container">
       <div class="section-header">
         <span class="section-tag">// Industry Benchmarks</span>
         <h2 class="section-title">Competitive Feature Analysis</h2>
-        <p class="section-desc">Comparing transfer speed, setup friction, OS compatibility, and memory safety against market leaders.</p>
+        <p class="section-desc">Comprehensive comparison across throughput, setup friction, OS compatibility, and memory efficiency.</p>
       </div>
 
-      <div class="comp-cards-grid">
-        <!-- 1. A-Drop-v2 Winner Card -->
-        <div class="comp-card winner-card glass-card">
-          <div class="comp-card-header">
-            <div class="comp-card-title gradient-text">
-              <i class="fa-solid fa-bolt"></i> A-Drop-v2
-            </div>
-            <span class="badge-winner"><i class="fa-solid fa-crown"></i> WINNER</span>
-          </div>
-          <div class="comp-metrics-list">
-            <div class="c-metric">
-              <span class="c-lbl">Transfer Speed:</span>
-              <span class="c-val winner-text">🚀 200 - 238.3 MB/s</span>
-            </div>
-            <div class="c-metric">
-              <span class="c-lbl">56MB Video Latency:</span>
-              <span class="c-val winner-text">⚡ 0.3 Seconds</span>
-            </div>
-            <div class="c-metric">
-              <span class="c-lbl">Receiver App Install:</span>
-              <span class="c-val winner-text">0 KB (Direct Web Link)</span>
-            </div>
-            <div class="c-metric">
-              <span class="c-lbl">OS Compatibility:</span>
-              <span class="c-val winner-text">Universal (iOS, Android, Win, Mac, Linux)</span>
-            </div>
-            <div class="c-metric">
-              <span class="c-lbl">Large File Memory:</span>
-              <span class="c-val winner-text">Zero Overflow (Flat 50MB RAM)</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- 2. Apple AirDrop Card -->
-        <div class="comp-card glass-card">
-          <div class="comp-card-header">
-            <div class="comp-card-title">
-              <i class="fa-brands fa-apple"></i> Apple AirDrop
-            </div>
-            <span class="badge-loser"><i class="fa-solid fa-lock"></i> CLOSED</span>
-          </div>
-          <div class="comp-metrics-list">
-            <div class="c-metric">
-              <span class="c-lbl">Transfer Speed:</span>
-              <span class="c-val">40 - 70 MB/s</span>
-            </div>
-            <div class="c-metric">
-              <span class="c-lbl">56MB Video Latency:</span>
-              <span class="c-val">1.0 - 1.5 Seconds</span>
-            </div>
-            <div class="c-metric">
-              <span class="c-lbl">Receiver App Install:</span>
-              <span class="c-val badge-neutral">Built-in (iOS/Mac)</span>
-            </div>
-            <div class="c-metric">
-              <span class="c-lbl">OS Compatibility:</span>
-              <span class="c-val badge-loser">Apple Only Walled Garden</span>
-            </div>
-            <div class="c-metric">
-              <span class="c-lbl">Large File Memory:</span>
-              <span class="c-val badge-neutral">No (Native Kernel)</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- 3. Google Quick Share Card -->
-        <div class="comp-card glass-card">
-          <div class="comp-card-header">
-            <div class="comp-card-title">
-              <i class="fa-brands fa-android"></i> Google Quick Share
-            </div>
-            <span class="badge-neutral">Standard</span>
-          </div>
-          <div class="comp-metrics-list">
-            <div class="c-metric">
-              <span class="c-lbl">Transfer Speed:</span>
-              <span class="c-val">8 - 15 MB/s</span>
-            </div>
-            <div class="c-metric">
-              <span class="c-lbl">56MB Video Latency:</span>
-              <span class="c-val">4.0 - 7.0 Seconds</span>
-            </div>
-            <div class="c-metric">
-              <span class="c-lbl">Receiver App Install:</span>
-              <span class="c-val badge-neutral">Built-in Android / Win App</span>
-            </div>
-            <div class="c-metric">
-              <span class="c-lbl">OS Compatibility:</span>
-              <span class="c-val badge-neutral">Android & Windows Only</span>
-            </div>
-            <div class="c-metric">
-              <span class="c-lbl">Large File Memory:</span>
-              <span class="c-val badge-neutral">No</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- 4. LocalSend Card -->
-        <div class="comp-card glass-card">
-          <div class="comp-card-header">
-            <div class="comp-card-title">
-              <i class="fa-solid fa-share-nodes"></i> LocalSend
-            </div>
-            <span class="badge-loser"><i class="fa-solid fa-download"></i> APP REQUIRED</span>
-          </div>
-          <div class="comp-metrics-list">
-            <div class="c-metric">
-              <span class="c-lbl">Transfer Speed:</span>
-              <span class="c-val">30 - 60 MB/s</span>
-            </div>
-            <div class="c-metric">
-              <span class="c-lbl">56MB Video Latency:</span>
-              <span class="c-val">1.5 - 2.5 Seconds</span>
-            </div>
-            <div class="c-metric">
-              <span class="c-lbl">Receiver App Install:</span>
-              <span class="c-val badge-loser">Mandatory App Download</span>
-            </div>
-            <div class="c-metric">
-              <span class="c-lbl">OS Compatibility:</span>
-              <span class="c-val badge-neutral">Cross-Platform (App Req.)</span>
-            </div>
-            <div class="c-metric">
-              <span class="c-lbl">Large File Memory:</span>
-              <span class="c-val badge-neutral">No</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- 5. Snapdrop / PairDrop Card -->
-        <div class="comp-card glass-card">
-          <div class="comp-card-header">
-            <div class="comp-card-title">
-              <i class="fa-solid fa-globe"></i> Snapdrop / PairDrop
-            </div>
-            <span class="badge-loser"><i class="fa-solid fa-triangle-exclamation"></i> RAM RISKY</span>
-          </div>
-          <div class="comp-metrics-list">
-            <div class="c-metric">
-              <span class="c-lbl">Transfer Speed:</span>
-              <span class="c-val">15 - 30 MB/s</span>
-            </div>
-            <div class="c-metric">
-              <span class="c-lbl">56MB Video Latency:</span>
-              <span class="c-val">2.5 - 4.0 Seconds</span>
-            </div>
-            <div class="c-metric">
-              <span class="c-lbl">Receiver App Install:</span>
-              <span class="c-val badge-neutral">0 KB (Browser Link)</span>
-            </div>
-            <div class="c-metric">
-              <span class="c-lbl">OS Compatibility:</span>
-              <span class="c-val badge-neutral">Universal</span>
-            </div>
-            <div class="c-metric">
-              <span class="c-lbl">Large File Memory:</span>
-              <span class="c-val badge-loser">High Risk (RAM Crash 2GB+)</span>
-            </div>
-          </div>
-        </div>
+      <div class="glass-card table-wrapper">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>System / Platform</th>
+              <th>Transfer Speed</th>
+              <th>56MB Video Latency</th>
+              <th>Receiver App Install</th>
+              <th>Cross-Platform Support</th>
+              <th>Large File Memory Safety</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="highlight-row">
+              <td>
+                <span class="gradient-text" style="font-size: 1.1rem; font-weight: 800;"><i class="fa-solid fa-bolt"></i> A-Drop-v2</span>
+              </td>
+              <td><span class="badge-winner"><i class="fa-solid fa-rocket"></i> 200 - 238.3 MB/s</span></td>
+              <td><span class="badge-winner"><i class="fa-solid fa-bolt"></i> 0.3 Seconds</span></td>
+              <td><span class="badge-winner"><i class="fa-solid fa-check"></i> 0 KB (Browser Link)</span></td>
+              <td><span class="badge-winner"><i class="fa-solid fa-globe"></i> Universal (iOS, Android, Windows, Mac, Linux)</span></td>
+              <td><span class="badge-winner"><i class="fa-solid fa-shield-halved"></i> Zero Overflow (Flat 50MB RAM)</span></td>
+            </tr>
+            <tr>
+              <td><strong><i class="fa-brands fa-apple"></i> Apple AirDrop</strong></td>
+              <td>40 - 70 MB/s</td>
+              <td>1.0 - 1.5 Seconds</td>
+              <td><span class="badge-neutral">Built-in (iOS/Mac)</span></td>
+              <td><span class="badge-loser"><i class="fa-solid fa-lock"></i> Apple Ecosystem Only</span></td>
+              <td><span class="badge-neutral">No (Native Kernel)</span></td>
+            </tr>
+            <tr>
+              <td><strong><i class="fa-brands fa-android"></i> Google Quick Share</strong></td>
+              <td>8 - 15 MB/s</td>
+              <td>4.0 - 7.0 Seconds</td>
+              <td><span class="badge-neutral">Built-in Android / Win App</span></td>
+              <td><span class="badge-neutral">Android & Windows Only</span></td>
+              <td><span class="badge-neutral">No</span></td>
+            </tr>
+            <tr>
+              <td><strong><i class="fa-solid fa-share-nodes"></i> LocalSend</strong></td>
+              <td>30 - 60 MB/s</td>
+              <td>1.5 - 2.5 Seconds</td>
+              <td><span class="badge-loser"><i class="fa-solid fa-download"></i> Mandatory App Install</span></td>
+              <td><span class="badge-neutral">Cross-Platform (App Req.)</span></td>
+              <td><span class="badge-neutral">No</span></td>
+            </tr>
+            <tr>
+              <td><strong><i class="fa-solid fa-globe"></i> Snapdrop / PairDrop</strong></td>
+              <td>15 - 30 MB/s</td>
+              <td>2.5 - 4.0 Seconds</td>
+              <td><span class="badge-neutral">0 KB (Browser Link)</span></td>
+              <td><span class="badge-neutral">Universal</span></td>
+              <td><span class="badge-loser"><i class="fa-solid fa-triangle-exclamation"></i> High Risk (RAM Crash 2GB+)</span></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </section>
